@@ -1,0 +1,36 @@
+<html>
+<style>
+div{
+background-color:yellow;
+color:black;
+position:absolute;
+height:100px;
+width:100px;
+text-align:center;
+font-size:20px; 
+border-width:1px;
+border:solid black;
+}
+.div2{
+background-color: blue;
+}
+</style>
+<body onLoad="inizia()">
+<div class="div" id='div'></div>
+<div class="div2" id='div'></div>
+<script>
+function inizia(){
+var b=document.getElementById('div');
+
+setInterval(function () {
+y=parseInt(b.offsetLeft);
+y=parseInt(Math.random()*400)+500;  
+b.style.left=y;
+x=parseInt(b.offsetTop);
+x=parseInt(Math.random()*400)+500;
+b.style.top=x;
+}, 500);
+} 
+</script>
+</body>
+</html>

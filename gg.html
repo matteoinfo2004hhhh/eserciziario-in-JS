@@ -1,0 +1,49 @@
+<html>
+<body>
+<style>
+div{
+height: 100px;
+width: 100px;
+margin:4;
+}
+</style>    
+<p id="out"></p>
+<button onclick="tempo()">clicca</button>
+
+<div class="div" id="div1"></div>
+
+<script>
+    let mioarraytempi=[];
+let tempoiniziale=Date.now();
+function tempo() {
+ let tempodalclick=Date.now()-tempoiniziale;
+mioarraytempi.push(tempodalclick);
+stampaArray();
+}
+function stampaArray() {
+ document.getElementById("out").innerHTML=mioarraytempi.toString();
+ if (mioarraytempi<2000) {     
+document.getElementById("div1").style.backgroundColor="red";
+element.classList.toggle("div");  
+} else {  
+document.getElementById("div1").style.backgroundColor="green";
+element.classList.toggle("div");  
+}
+
+
+
+
+}
+
+
+
+ </script>
+
+
+
+</body>
+
+
+
+
+</html>

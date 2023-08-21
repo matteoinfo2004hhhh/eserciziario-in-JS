@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+button{
+  height:50px;
+  width:150px;
+  margin:30px;
+}
+div{
+ margin:2px;
+ padding:2px;
+ width: 200px;
+ height: 200px;
+position:relative;
+display: flex;
+float: left;
+}
+.rosso{
+    background-color: red;
+}
+.giallo{
+    background-color: yellow;
+}
+.blu{
+    background-color: blue;
+}
+.verde{
+    background-color:green;
+}
+</style>
+</head>
+<body>
+<div id="box1" class="rosso">
+    <button  onclick="cambiacolore()">cambia colore</button>
+</div>
+<div id="box2" class="verde">
+  <button  onclick="cambiacolore2()">cambia colore 2 </button>
+</div>
+<div id="box3" class="blu">
+  <button  onclick="cambiacolore3()">cambia colore 3</button>
+</div>
+<div id="box4" class="giallo">
+  <button  onclick="cambiacolore4()">cambia colore 4</button>
+</div>
+<script>
+function cambiacolore() {
+    document.getElementById('box1').style.backgroundColor = "green";
+element.classList.toggle("verde");
+}function cambiacolore2() {
+    document.getElementById('box2').style.backgroundColor = "purple";
+element.classList.toggle("blu");
+}function cambiacolore3() {
+    document.getElementById('box3').style.backgroundColor = "gold";
+element.classList.toggle("giallo");
+}function cambiacolore4() {
+    document.getElementById('box4').style.backgroundColor = "black";
+element.classList.toggle("rosso");
+}
+</script>    
+</body>
+</html>

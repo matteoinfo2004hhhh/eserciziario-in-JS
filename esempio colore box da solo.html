@@ -1,0 +1,33 @@
+<html>
+<body onload="cambiacolore()" >
+<head>
+<style>
+div{
+width:100px;
+height:100px;
+border: solid black 6px;
+border-radius: 10px;
+background-color: aliceblue;
+}
+.div2{
+width:100px;
+height:100px;
+border: solid black 6px;
+border-radius: 10px;   
+}
+</style>
+<div id="div"></div>
+<script>
+function cambiacolore(){
+var a=document.getElementById("div");
+setInterval(function(){
+r=parseInt(Math.random()*256);
+i=parseInt(Math.random()*256);
+k=parseInt(Math.random()*256);
+a.style.backgroundColor="rgb("+r+","+i+","+k+")";
+},500);
+}
+</script>
+</head>
+</body>
+</html>

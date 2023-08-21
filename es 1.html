@@ -1,0 +1,44 @@
+
+<html>
+<head>
+</head>
+<style>
+div{
+position:absolute;
+height:100px;
+width:100px;
+border-width:1px;
+background-color:rgb(red, green, blue);
+border:solid black;
+}
+</style>
+<script>
+function inizia(){
+var a=document.getElementById('div');
+var colore = new Array();
+colore[0]="blue";
+colore[1]="yellow";
+colore[2]="black";
+colore[3]="green";
+setInterval(function () {
+x=parseInt(Math.random()*7);
+a.style.backgroundColor=colore[x];
+}, 500);
+}
+function inizia(){
+var b=document.getElementById('div');
+setInterval(function () {
+y=parseInt(b.offsetLeft);
+y=y+20;
+b.style.left=y;
+x=parseInt(b.offsetTop);
+x=x+10;
+b.style.top=x;
+}, 500);
+}
+</script>   
+<body onLoad="inizia()">
+<div id='div'></div>
+</body>
+</html>
+        

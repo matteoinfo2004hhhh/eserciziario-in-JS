@@ -1,0 +1,33 @@
+<html>
+<body>
+<style>
+div{
+height:300px;
+width:300px;
+border:black solid 5px;
+border-radius: 5px;
+margin: 8px;
+background-color: chartreuse;
+}
+button{
+height: 50px;
+width: 50px;    
+}
+</style>
+<div class="div"><p style="color:red">media del vttore</p><p id="media">0</p></div>
+<script>
+function media(){
+let somma=0;
+let media;     
+let numeroarray=[50];
+for(let i=0;i<50;i++){
+numeroarray=Math.random(Math.round()*50);
+somma+=numeroarray=[i];
+media=somma/50;
+document.getElementById("media").innerHTML=media;
+}
+}
+</script>   
+<button onclick="media()">clicca</button>
+</body>
+</html>

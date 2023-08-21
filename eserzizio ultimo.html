@@ -1,0 +1,52 @@
+<html>
+<script>
+let arrayBello = [], num = 50,indice;
+function riempiArray() {
+for(let i=0;i<num;i++) {
+arrayBello[i]=parseInt(Math.random() * 100);
+document.getElementById("out").innerHTML += arrayBello[i] + " ";
+}
+}
+function max() {
+let massimo=-1;
+for (let i=0;i<arrayBello.length;i++) {
+if (arrayBello[i]>massimo) {
+massimo=arrayBello[i];
+indice=i;
+}
+}
+document.getElementById("outMassimo").innerHTML += massimo + " " + indice;
+}
+function min() {
+let minimo=1001;
+for (let i=0;i<arrayBello.length;i++) {
+if (arrayBello[i]<minimo) {
+minimo=arrayBello[i];
+indice=i;
+}
+}
+document.getElementById("outMinimo").innerHTML += minimo + " " + indice;
+}
+function media(){
+let somma=0,mediaa; 
+for (let i=0;i<arrayBello.length;i++){
+somma+=arrayBello[i];
+}
+document.getElementById("media").innerHTML=mediaa=somma/num;
+}
+</script>
+</head>
+<body>
+<button onclick="riempiArray()">carica array</button>
+<button onclick="max()">massimo
+</button>
+<button onclick="min()">
+        minimo
+</button>
+<button onclick="media()">media</button>
+<p id="out">numero </p>
+<p id="outMassimo">Numero massimo  </p>
+<p id="outMinimo">Numero minimo  </p>
+<p id="media">la media e </p>
+</body>
+</html>
