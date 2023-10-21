@@ -1,0 +1,10 @@
+let x = 5;
+let y = 10;
+let somma = x + y;
+let differenza = x - y;
+let prodotto = x * y;
+let quoziente = x / y;
+console.log(somma);
+console.log(differenza);
+console.log(prodotto);
+console.log(quoziente);
